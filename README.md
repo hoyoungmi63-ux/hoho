@@ -24,11 +24,11 @@ hoho/
 | 고칠 내용 | 파일 | 찾을 글자 |
 |---|---|---|
 | 프로그램 카드 | `index.html` | `진행했던 프로그램`, `지금 진행 중`, `곧 만나요` |
-| 숫자 (수강생 수 등) | `index.html` | `data-target="1200"` |
+| 숫자 (수강생 수 등) | `index.html` | `data-target="20000"` |
 | 색깔 | `css/style.css` | 맨 위 `:root` |
 | 카카오톡 미리보기 문구 | `index.html` | `og:title`, `og:description` |
 
-> 지금 프로그램 내용, 대표 약력, 숫자는 **예시**예요. 실제 내용으로 바꿔 주세요.
+> 지금 프로그램 내용과 대표 약력은 **예시**예요. 실제 내용으로 바꿔 주세요.
 
 ## 사용한 것
 - 글꼴: Google Fonts **Noto Sans KR**
