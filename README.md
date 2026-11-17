@@ -30,7 +30,7 @@ hoho/
 | 안내원 위치·크기·움직임 | `css/style.css` | `플로팅 안내원` |
 | 카카오톡 미리보기 문구 | `index.html` | `og:title`, `og:description` |
 
-> 지금 프로그램 내용과 대표 약력은 **예시**예요. 실제 내용으로 바꿔 주세요.
+> 지금 프로그램 내용은 **예시**예요. 실제 내용으로 바꿔 주세요.
 
 ## 사용한 것
 - 글꼴: Google Fonts **Noto Sans KR**
