@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 520" role="img" aria-labelledby="t">
+  <title id="t">감사 밥그릇을 든 호영미 대표 캐릭터 전신 그림</title>
+  <defs>
+    <radialGradient id="blush">
+      <stop offset="0" stop-color="#F29AA6" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#F29AA6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 바닥 그림자 -->
+  <ellipse cx="150" cy="492" rx="74" ry="10" fill="#E9D8C0"/>
+
+  <!-- 떠다니는 하트 -->
+  <path d="M232 92c0-6 8-8 10-2 2-6 10-4 10 2 0 7-10 12-10 12s-10-5-10-12z" fill="#E07A2E" opacity="0.85"/>
+  <path d="M52 150c0-4 5-5 6-1 1-4 6-3 6 1 0 5-6 8-6 8s-6-3-6-8z" fill="#E9A06A" opacity="0.8"/>
+  <path d="M244 200c0-3 4-4 5-1 1-3 5-2 5 1 0 4-5 6-5 6s-5-2-5-6z" fill="#F29AA6"/>
+
+  <g fill="none" stroke="#2B211A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 다리 -->
+    <path d="M134 392 L132 470" />
+    <path d="M146 392 L145 470" />
+    <path d="M155 392 L156 470" />
+    <path d="M167 392 L169 470" />
+  </g>
+
+  <!-- 신발 -->
+  <path d="M124 472c0-6 6-9 12-9h10c3 0 4 3 4 6v4c0 4-3 6-7 6h-14c-4 0-5-3-5-7z" fill="#B85A1A" stroke="#2B211A" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M176 472c0-6-6-9-12-9h-10c-3 0-4 3-4 6v4c0 4 3 6 7 6h14c4 0 5-3 5-7z" fill="#B85A1A" stroke="#2B211A" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- 원피스 -->
+  <path d="M121 214 C118 250 116 280 114 302 C108 334 99 362 92 388 Q150 402 208 388 C201 362 192 334 186 302 C184 280 182 250 179 214 Q150 226 121 214 Z"
+        fill="#FBE3CC" stroke="#2B211A" stroke-width="3" stroke-linejoin="round"/>
+  <!-- 원피스 밑단 장식 -->
+  <path d="M100 370 Q150 382 200 370" fill="none" stroke="#E07A2E" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 9"/>
+  <!-- 어깨끈 -->
+  <g fill="none" stroke="#2B211A" stroke-width="3" stroke-linecap="round">
+    <path d="M121 214 L128 204" />
+    <path d="M179 214 L172 204" />
+  </g>
+
+  <!-- 목 -->
+  <path d="M141 190 L141 206 M159 190 L159 206" fill="none" stroke="#2B211A" stroke-width="3" stroke-linecap="round"/>
+  <!-- 어깨선 -->
+  <path d="M141 206 C128 207 114 211 108 222 M159 206 C172 207 186 211 192 222" fill="none" stroke="#2B211A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 왼팔 -->
+  <path d="M108 222 C98 246 98 276 112 292 C118 298 128 296 132 290 L134 278 C126 276 122 270 122 260 C122 248 124 238 124 230"
+        fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- 오른팔 -->
+  <path d="M192 222 C202 246 202 276 188 292 C182 298 172 296 168 290 L166 278 C174 276 178 270 178 260 C178 248 176 238 176 230"
+        fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- 밥그릇 -->
+  <path d="M128 276 c-3-15 10-24 20-19 c9-7 24 1 22 19" fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M138 266 q3 -3 6 0 M150 262 q3 -3 6 0 M158 270 q3 -3 6 0 M142 274 q3 -3 6 0" fill="none" stroke="#2B211A" stroke-width="2" stroke-linecap="round"/>
+  <path d="M125 277 H175 C173 296 164 304 150 304 C136 304 127 296 125 277 Z" fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M142 304 L144 310 H156 L158 304" fill="none" stroke="#2B211A" stroke-width="3" stroke-linejoin="round"/>
+  <!-- 그릇을 잡은 손 -->
+  <path d="M126 282 c-6 0 -9 6 -6 11 c2 4 8 4 11 1" fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M174 282 c6 0 9 6 6 11 c-2 4 -8 4 -11 1" fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 얼굴 -->
+  <path d="M106 124 C104 170 126 192 150 192 C174 192 196 170 194 124" fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linecap="round"/>
+  <!-- 귀 -->
+  <path d="M107 136 c-9 -4 -13 7 -6 12 c2 2 5 2 7 1" fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M193 136 c9 -4 13 7 6 12 c-2 2 -5 2 -7 1" fill="#FFFFFF" stroke="#2B211A" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 머리카락 (단발) -->
+  <g fill="none" stroke="#2B211A" stroke-width="3" stroke-linecap="round">
+    <path d="M96 176 C82 128 92 74 138 60" />
+    <path d="M152 57 C208 58 224 116 206 176" />
+    <!-- 앞머리 -->
+    <path d="M110 110 C126 110 138 102 147 86 C154 100 172 110 190 110" />
+    <!-- 앞머리 끝 곱슬 -->
+    <path d="M112 110 c-7 0 -9 -8 -3 -9 c5 0 5 7 -1 9" />
+    <path d="M188 110 c7 0 9 -8 3 -9 c-5 0 -5 7 1 9" />
+  </g>
+
+  <!-- 눈썹 -->
+  <path d="M124 126 q7 -7 14 0 M162 126 q7 -7 14 0" fill="none" stroke="#2B211A" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 눈 -->
+  <ellipse cx="131" cy="140" rx="4" ry="4.6" fill="#2B211A"/>
+  <ellipse cx="169" cy="140" rx="4" ry="4.6" fill="#2B211A"/>
+  <circle cx="132.5" cy="138.3" r="1.3" fill="#FFFFFF"/>
+  <circle cx="170.5" cy="138.3" r="1.3" fill="#FFFFFF"/>
+  <!-- 볼 -->
+  <circle cx="118" cy="160" r="12" fill="url(#blush)"/>
+  <circle cx="182" cy="160" r="12" fill="url(#blush)"/>
+  <!-- 코 -->
+  <path d="M153 149 c-5 -1 -6 6 -1 7" fill="none" stroke="#2B211A" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 입 -->
+  <path d="M139 164 q11 10 22 0" fill="none" stroke="#2B211A" stroke-width="3" stroke-linecap="round"/>
+</svg>

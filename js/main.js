@@ -54,6 +54,56 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* ---------- 3-1. 플로팅 안내원 (아바타 클릭 → 말풍선 메뉴) ---------- */
+  var guide = document.querySelector('.guide');
+  if (guide) {
+    var guideBtn = guide.querySelector('.guide-btn');
+    var guidePop = guide.querySelector('.guide-pop');
+    var guideClose = guide.querySelector('.guide-close');
+
+    function setGuide(open) {
+      guide.classList.toggle('is-open', open);
+      guideBtn.setAttribute('aria-expanded', String(open));
+      guideBtn.setAttribute('aria-label', open ? '안내 메뉴 닫기' : '안내 메뉴 열기');
+      guidePop.setAttribute('aria-hidden', String(!open));
+      if (open) {
+        var first = guidePop.querySelector('.guide-link');
+        if (first) setTimeout(function () { first.focus({ preventScroll: true }); }, 50);
+      }
+    }
+
+    guideBtn.addEventListener('click', function () {
+      setGuide(!guide.classList.contains('is-open'));
+    });
+    guideClose.addEventListener('click', function () {
+      setGuide(false);
+      guideBtn.focus();
+    });
+
+    // 메뉴를 누르면 해당 섹션으로 부드럽게 이동
+    guidePop.querySelectorAll('.guide-link').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        setGuide(false);
+        target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+        if (history.replaceState) history.replaceState(null, '', link.getAttribute('href'));
+      });
+    });
+
+    // 바깥을 누르거나 Esc 키를 누르면 닫기
+    document.addEventListener('click', function (e) {
+      if (guide.classList.contains('is-open') && !guide.contains(e.target)) setGuide(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && guide.classList.contains('is-open')) {
+        setGuide(false);
+        guideBtn.focus();
+      }
+    });
+  }
+
   /* ---------- 4. 글자 타이핑 효과 ---------- */
   var typingEl = document.querySelector('.typing');
   if (typingEl && !reduceMotion) {

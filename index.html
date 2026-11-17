@@ -121,9 +121,13 @@
         </div>
 
         <div class="profile-box reveal">
-          <img class="profile-thumb" src="images/profile.jpg" alt="감사숲평생교육원 호영미 대표 사진" width="800" height="1000" loading="lazy">
-          <div>
-            <h3 class="profile-title">대표 호영미</h3>
+          <!-- 전신 아바타 (자기소개 프로필 그림) -->
+          <img class="profile-avatar" src="images/avatar-full.svg" alt="밥그릇을 두 손으로 들고 웃고 있는 호영미 대표 캐릭터 전신 그림" width="300" height="520" loading="lazy">
+          <div class="profile-body">
+            <div class="profile-head">
+              <img class="profile-thumb" src="images/profile.jpg" alt="감사숲평생교육원 호영미 대표 사진" width="800" height="1000" loading="lazy">
+              <h3 class="profile-title">대표 호영미</h3>
+            </div>
             <ul class="profile-list">
               <li>감사숲평생교육원 대표 (예시)</li>
               <li>감사교육 전문 강사 · 평생교육사 (예시)</li>
@@ -320,5 +324,25 @@
       <p class="copyright">© 2026 호영미. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- 플로팅 안내원 (오른쪽 아래 고정) -->
+  <div class="guide">
+    <div class="guide-pop" id="guide-pop" role="dialog" aria-label="안내 메뉴" aria-hidden="true">
+      <button class="guide-close" type="button" aria-label="안내 메뉴 닫기">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <p class="guide-hello">안녕하세요! 🌳<br>어디로 안내해 드릴까요?</p>
+      <ul class="guide-menu">
+        <li><a class="guide-link" href="#about"><span aria-hidden="true">👋</span> 자기소개</a></li>
+        <li><a class="guide-link" href="#past"><span aria-hidden="true">📚</span> 나의 작품</a></li>
+        <li><a class="guide-link" href="#contact"><span aria-hidden="true">💌</span> 연락하기</a></li>
+      </ul>
+    </div>
+    <button class="guide-btn" type="button" aria-expanded="false" aria-controls="guide-pop" aria-label="안내 메뉴 열기">
+      <span class="guide-wave" aria-hidden="true"></span>
+      <span class="guide-wave guide-wave-2" aria-hidden="true"></span>
+      <img src="images/avatar-circle.png" alt="" width="512" height="512">
+    </button>
+  </div>
 </body>
 </html>
