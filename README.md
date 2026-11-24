@@ -9,6 +9,8 @@ hoho/
 ├─ index.html      ← 페이지 내용 (글, 메뉴, 프로그램 카드)
 ├─ css/style.css   ← 색깔, 글꼴, 배치, 반응형
 ├─ js/main.js      ← 애니메이션, 햄버거 메뉴, 이메일 조합
+├─ css/card.css, js/card.js, js/qr.js ← 나의 디지털 명함 (모양 / 저장 기능 / QR코드)
+├─ contact.vcf     ← 연락처 파일 (카카오톡 등 앱 안 브라우저용)
 ├─ images/         ← 사진 (profile.jpg, preview.jpg, favicon.svg)
 ├─ videos/         ← 소개영상 (intro.mp4)
 ├─ netlify.toml    ← Netlify 배포 설정과 보안 헤더
@@ -27,6 +29,7 @@ hoho/
 | 프로그램 카드 | `index.html` | `진행했던 프로그램`, `지금 진행 중`, `곧 만나요` |
 | 숫자 (수강생 수 등) | `index.html` | `data-target="20000"` |
 | 색깔 | `css/style.css` | 맨 위 `:root` |
+| 디지털 명함 내용 | `js/card.js`, `index.html`, `contact.vcf` | `INFO`, `나의 디지털 명함` |
 | 오른쪽 아래 안내원 메뉴 | `index.html` | `플로팅 안내원` |
 | 안내원 위치·크기·움직임 | `css/style.css` | `플로팅 안내원` |
 | 카카오톡 미리보기 문구 | `index.html` | `og:title`, `og:description` |

@@ -1,0 +1,168 @@
+/* =========================================
+   나의 디지털 명함
+   색상은 style.css 맨 위 :root 의 색을 그대로 써요.
+   ========================================= */
+
+/* ---------- 오른쪽 아래 버튼 (안내원 아바타 왼쪽) ---------- */
+.bizcard-open {
+  position: fixed; right: 116px; bottom: 88px; z-index: 151;
+  display: none; align-items: center; gap: 8px;
+  min-height: 52px; padding: 12px 20px; border: 2px solid var(--white); border-radius: 999px;
+  background: linear-gradient(135deg, var(--point), var(--point-dark)); color: var(--white);
+  font: inherit; font-size: 1rem; font-weight: 700; white-space: nowrap; cursor: pointer;
+  box-shadow: 0 10px 24px rgba(150, 71, 15, 0.32);
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.js .bizcard-open { display: inline-flex; animation: bizcard-pop 0.6s var(--ease) 0.6s backwards; }
+.bizcard-open:hover { transform: translateY(-3px); box-shadow: 0 16px 30px rgba(150, 71, 15, 0.4); }
+.bizcard-open:focus-visible { border-radius: 999px; }
+.bizcard-open svg { width: 22px; height: 22px; fill: currentColor; flex-shrink: 0; }
+
+/* 안내원의 보이지 않는 말풍선 자리가 아래 글·버튼을 가리지 않도록 */
+.guide { pointer-events: none; }
+.guide-btn, .guide.is-open .guide-pop { pointer-events: auto; }
+.guide-wave { pointer-events: none; }
+
+/* ---------- 명함 창 ---------- */
+.bizcard-lock { overflow: hidden; scrollbar-gutter: stable; }
+.bizcard {
+  width: 100%; height: 100%; max-width: none; max-height: none; margin: 0; padding: 0;
+  border: 0; background: transparent; color: var(--text); overflow-y: auto;
+  overscroll-behavior: contain; perspective: 1400px;
+}
+.bizcard[open] { display: grid; place-items: center; }
+.bizcard::backdrop {
+  background: rgba(59, 42, 30, 0.62);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  animation: bizcard-fade 0.4s var(--ease);
+}
+.bizcard-wrap { position: relative; width: min(372px, 100%); padding: 20px 16px; }
+
+.bizcard-close {
+  position: absolute; top: 28px; right: 24px; z-index: 3;
+  display: grid; place-items: center; width: 44px; height: 44px;
+  border: 0; border-radius: 50%; background: rgba(59, 42, 30, 0.28); color: var(--white); cursor: pointer;
+  transition: background-color 0.3s var(--ease);
+}
+.bizcard-close:hover { background: rgba(59, 42, 30, 0.5); }
+.bizcard-close:focus-visible { outline-color: var(--white); border-radius: 50%; }
+.bizcard-close svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+
+/* ---------- 명함 ---------- */
+.bizcard-card {
+  position: relative; overflow: hidden; border-radius: 26px; background: var(--bg); text-align: center;
+  box-shadow: 0 30px 60px rgba(30, 18, 10, 0.4);
+}
+.bizcard-top {
+  position: relative; height: 118px; padding: 18px 60px 0; overflow: hidden; color: var(--white);
+  background: linear-gradient(135deg, #8A3F0C, var(--point) 60%, #C96A20);
+}
+.bizcard-top::before, .bizcard-top::after {
+  content: ""; position: absolute; border-radius: 50%; background: rgba(255, 255, 255, 0.09);
+}
+.bizcard-top::before { width: 190px; height: 190px; left: -70px; top: -90px; }
+.bizcard-top::after { width: 150px; height: 150px; right: -40px; bottom: -80px; }
+.bizcard-org { position: relative; z-index: 1; font-size: 1.12rem; font-weight: 900; line-height: 1.35; }
+.bizcard-slogan { position: relative; z-index: 1; font-size: 0.8rem; line-height: 1.5; }
+.bizcard-photo {
+  position: relative; z-index: 1; width: 112px; height: 112px; margin: -48px auto 0;
+  border: 5px solid var(--bg); border-radius: 50%; object-fit: cover; object-position: 50% 15%;
+  background: var(--sub); box-shadow: 0 8px 20px rgba(59, 42, 30, 0.2);
+}
+.bizcard-name { margin-top: 8px; font-size: 1.75rem; font-weight: 900; line-height: 1.3; }
+.bizcard-name span { font-size: 1rem; font-weight: 700; color: var(--point); }
+.bizcard-role { font-size: 0.88rem; line-height: 1.5; color: var(--text-soft); }
+
+.bizcard-body {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px;
+  margin: 14px 18px 0; padding-top: 14px; border-top: 1px solid var(--sub); text-align: left;
+}
+.bizcard-list li { display: flex; align-items: center; gap: 8px; min-height: 36px; }
+.bizcard-list a { font-size: 0.8rem; font-weight: 500; text-decoration: none; white-space: nowrap; padding: 6px 0; line-height: 1.5; }
+.bizcard-list li:first-child a { font-size: 0.95rem; font-weight: 700; }
+.bizcard-list a:hover { color: var(--point); text-decoration: underline; }
+.bizcard-list svg, .bizcard-addr svg { width: 17px; height: 17px; fill: var(--point); flex-shrink: 0; }
+.bizcard-qr { margin: 0; text-align: center; }
+.bizcard-qr-canvas {
+  display: block; width: 116px; height: 116px; border-radius: 12px; background: var(--white);
+  box-shadow: 0 4px 14px rgba(59, 42, 30, 0.12);
+}
+.bizcard-qr figcaption { margin-top: 4px; font-size: 0.75rem; font-weight: 700; line-height: 1.4; color: var(--point-dark); }
+.bizcard-addr {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  margin: 12px 0 0; padding: 11px 12px; background: var(--bg-alt); font-size: 0.76rem; line-height: 1.5;
+}
+
+/* ---------- 저장 버튼 ---------- */
+.bizcard-actions { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+.bizcard-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 52px; padding: 10px 12px;
+  border: 0; border-radius: 16px; background: var(--white); color: var(--point-dark);
+  font: inherit; font-size: 0.98rem; font-weight: 700; cursor: pointer;
+  box-shadow: 0 8px 18px rgba(30, 18, 10, 0.22);
+  transition: transform 0.3s var(--ease), background-color 0.3s var(--ease);
+}
+.bizcard-btn svg { width: 20px; height: 20px; fill: currentColor; flex-shrink: 0; }
+.bizcard-btn:hover { transform: translateY(-3px); background: var(--bg-alt); }
+.bizcard-btn-main { background: var(--point); color: var(--white); }
+.bizcard-btn-main:hover { background: var(--point-dark); }
+.bizcard-btn:focus-visible { outline-color: var(--white); border-radius: 16px; }
+.bizcard-btn[disabled] { opacity: 0.6; cursor: wait; }
+.bizcard-msg { min-height: 1.5em; margin-top: 10px; color: var(--white); font-size: 0.9rem; font-weight: 500; line-height: 1.5; text-align: center; }
+
+/* ---------- 길게 눌러 저장하는 화면 ---------- */
+.bizcard-preview {
+  position: absolute; inset: 20px 16px; z-index: 4; display: flex; flex-direction: column; align-items: center; gap: 12px;
+  padding: 18px; border-radius: 26px; background: var(--bg); text-align: center; overflow-y: auto;
+}
+.bizcard-preview[hidden] { display: none; }
+.bizcard-preview-img { width: auto; max-width: 100%; min-height: 0; flex: 0 1 auto; max-height: 70vh; border-radius: 14px; box-shadow: var(--shadow); -webkit-touch-callout: default; }
+.bizcard-preview .bizcard-btn { width: 100%; flex-shrink: 0; background: var(--point); color: var(--white); box-shadow: none; }
+
+/* ---------- 애니메이션 ---------- */
+.bizcard[open] .bizcard-card { animation: bizcard-flip 0.7s var(--ease) backwards; }
+.bizcard[open] .bizcard-photo { animation: bizcard-pop 0.5s var(--ease) 0.35s backwards; }
+.bizcard[open] .bizcard-name { animation: bizcard-up 0.5s var(--ease) 0.4s backwards; }
+.bizcard[open] .bizcard-role { animation: bizcard-up 0.5s var(--ease) 0.46s backwards; }
+.bizcard[open] .bizcard-body { animation: bizcard-up 0.5s var(--ease) 0.52s backwards; }
+.bizcard[open] .bizcard-actions { animation: bizcard-up 0.5s var(--ease) 0.6s backwards; }
+/* 명함 위를 한 번 스치는 빛 */
+.bizcard-card::after {
+  content: ""; position: absolute; z-index: 2; top: -20%; bottom: -20%; left: -60%; width: 40%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: rotate(12deg); pointer-events: none;
+}
+.bizcard[open] .bizcard-card::after { animation: bizcard-shine 0.8s ease-out 0.75s backwards; }
+/* 닫힐 때 */
+.bizcard.is-closing .bizcard-wrap { opacity: 0; transform: translateY(24px) scale(0.95); transition: opacity 0.3s var(--ease), transform 0.3s var(--ease); }
+.bizcard.is-closing::backdrop { opacity: 0; transition: opacity 0.3s var(--ease); }
+
+@keyframes bizcard-fade { from { opacity: 0; } }
+@keyframes bizcard-flip { from { opacity: 0; transform: rotateY(-75deg) translateY(30px) scale(0.92); } }
+@keyframes bizcard-up { from { opacity: 0; transform: translateY(14px); } }
+@keyframes bizcard-pop { from { opacity: 0; transform: scale(0.6); } }
+@keyframes bizcard-shine { from { left: -60%; } to { left: 130%; } }
+
+/* ---------- 휴대폰 ---------- */
+@media (max-width: 600px) {
+  .bizcard-open {
+    right: 90px; bottom: calc(76px + env(safe-area-inset-bottom));
+    min-height: 48px; padding: 10px 16px; gap: 6px; font-size: 0.95rem;
+  }
+  .bizcard-open svg { width: 20px; height: 20px; }
+  .bizcard-body { margin: 14px 14px 0; gap: 8px; }
+  .bizcard-list li { gap: 6px; }
+  .bizcard-list a { font-size: 0.82rem; }
+}
+@media (max-width: 340px) {
+  .bizcard-body { grid-template-columns: 1fr; justify-items: center; }
+}
+
+/* ---------- 움직임 줄이기 설정한 사용자 ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .js .bizcard-open, .bizcard::backdrop,
+  .bizcard[open] .bizcard-card, .bizcard[open] .bizcard-card::after, .bizcard[open] .bizcard-photo,
+  .bizcard[open] .bizcard-name, .bizcard[open] .bizcard-role, .bizcard[open] .bizcard-body,
+  .bizcard[open] .bizcard-actions { animation: none; }
+  .bizcard-open:hover, .bizcard-btn:hover { transform: none; }
+}
