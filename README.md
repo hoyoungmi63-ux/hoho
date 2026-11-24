@@ -10,6 +10,7 @@ hoho/
 ├─ css/style.css   ← 색깔, 글꼴, 배치, 반응형
 ├─ js/main.js      ← 애니메이션, 햄버거 메뉴, 이메일 조합
 ├─ images/         ← 사진 (profile.jpg, preview.jpg, favicon.svg)
+├─ videos/         ← 소개영상 (intro.mp4)
 ├─ netlify.toml    ← Netlify 배포 설정과 보안 헤더
 ├─ .gitignore      ← GitHub에 올리지 않을 파일 목록
 └─ README.md       ← 이 설명서

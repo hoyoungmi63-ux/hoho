@@ -78,6 +78,13 @@ a:focus-visible, button:focus-visible {
 .site-nav .nav-cta { background: var(--point); color: var(--white); }
 .site-nav .nav-cta:hover { background: var(--point-dark); }
 
+/* 메뉴가 두 줄로 접히지 않도록 (작은 태블릿 가로) */
+@media (min-width: 861px) and (max-width: 1000px) {
+  .site-nav ul { gap: 0; }
+  .site-nav a { padding: 10px 9px; font-size: 0.93rem; white-space: nowrap; }
+  .logo { font-size: 1rem; white-space: nowrap; }
+}
+
 .menu-toggle {
   display: none; width: 48px; height: 48px; padding: 12px;
   background: none; border: 0; cursor: pointer; border-radius: 12px;
@@ -152,6 +159,17 @@ a:focus-visible, button:focus-visible {
 .section-label { font-size: 0.9rem; font-weight: 700; letter-spacing: 0.18em; color: var(--point); }
 .section-title { margin-top: 8px; font-size: clamp(1.9rem, 4.4vw, 2.7rem); font-weight: 900; line-height: 1.3; letter-spacing: -0.02em; }
 .section-lead { margin-top: 16px; color: var(--text-soft); font-size: 1.08rem; }
+
+/* ---------- 소개영상 ---------- */
+.intro-video { background: var(--bg-alt); }
+.intro-video-inner { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 64px; max-width: 960px; }
+.intro-video-text .btn { margin-top: 28px; }
+.video-frame {
+  width: 320px; max-width: 100%; aspect-ratio: 9 / 16; overflow: hidden;
+  border: 8px solid var(--white); border-radius: 28px; background: var(--sub);
+  box-shadow: 0 24px 48px rgba(59, 42, 30, 0.16);
+}
+.video-frame video { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 /* ---------- 교육원 소개 ---------- */
 .about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -344,7 +362,7 @@ a:focus-visible, button:focus-visible {
     max-height: 0; overflow: hidden; visibility: hidden;
     transition: max-height 0.4s var(--ease), visibility 0.4s;
   }
-  .site-nav.open { max-height: 420px; visibility: visible; }
+  .site-nav.open { max-height: 480px; visibility: visible; }
   .site-nav ul { flex-direction: column; align-items: stretch; gap: 4px; padding: 12px 20px 20px; }
   .site-nav a { padding: 14px 16px; font-size: 1.1rem; border-radius: 12px; }
   .site-nav .nav-cta { text-align: center; margin-top: 6px; }
@@ -358,6 +376,8 @@ a:focus-visible, button:focus-visible {
 
   .section { padding: 80px 0; }
   .section-head { margin-bottom: 40px; }
+
+  .intro-video-inner { grid-template-columns: 1fr; gap: 36px; text-align: center; justify-items: center; }
 }
 
 /* =========================================
