@@ -18,3 +18,9 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=604800"
+
+# 연락처 파일 (디지털 명함의 '연락처 저장')
+[[headers]]
+  for = "/contact.vcf"
+  [headers.values]
+    Content-Type = "text/vcard; charset=utf-8"

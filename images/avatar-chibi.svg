@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-14 40 424 556" role="img" aria-labelledby="t">
+  <title id="t">환하게 웃으며 손을 흔드는 호영미 원장 3D 치비 아바타</title>
+  <defs>
+    <radialGradient id="skin" cx="0.4" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#FFF3EA"/>
+      <stop offset="0.6" stop-color="#FFDFCB"/>
+      <stop offset="1" stop-color="#F0BC9E"/>
+    </radialGradient>
+    <radialGradient id="skinHand" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFF2E8"/>
+      <stop offset="1" stop-color="#F2C2A4"/>
+    </radialGradient>
+    <radialGradient id="hair" cx="0.38" cy="0.2" r="0.95">
+      <stop offset="0" stop-color="#55403A"/>
+      <stop offset="0.45" stop-color="#2E221E"/>
+      <stop offset="1" stop-color="#191210"/>
+    </radialGradient>
+    <linearGradient id="hairBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A1E1A"/>
+      <stop offset="1" stop-color="#140E0C"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#D4B2A2" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="iris" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E120D"/>
+      <stop offset="0.55" stop-color="#4A2C1E"/>
+      <stop offset="1" stop-color="#A86E46"/>
+    </linearGradient>
+    <radialGradient id="blush">
+      <stop offset="0" stop-color="#FF8A98" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#FF8A98" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="jacket" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#FFFCF6"/>
+      <stop offset="0.6" stop-color="#F8EFE1"/>
+      <stop offset="1" stop-color="#DECFB7"/>
+    </radialGradient>
+    <linearGradient id="sleeve" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFBF4"/>
+      <stop offset="1" stop-color="#E4D6C0"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8657C0"/>
+      <stop offset="1" stop-color="#55308C"/>
+    </linearGradient>
+    <linearGradient id="pants" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3E3A4A"/>
+      <stop offset="0.45" stop-color="#5E596E"/>
+      <stop offset="1" stop-color="#34303F"/>
+    </linearGradient>
+    <radialGradient id="shoe" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#B0703F"/>
+      <stop offset="1" stop-color="#5E3219"/>
+    </radialGradient>
+    <radialGradient id="floor">
+      <stop offset="0" stop-color="#000000" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- 바닥 그림자 -->
+  <ellipse cx="200" cy="566" rx="96" ry="15" fill="url(#floor)"/>
+
+  <!-- ===== 짧고 통통한 다리 & 동그란 신발 ===== -->
+  <rect x="152" y="450" width="44" height="96" rx="22" fill="url(#pants)"/>
+  <rect x="204" y="450" width="44" height="96" rx="22" fill="url(#pants)"/>
+  <ellipse cx="170" cy="548" rx="30" ry="18" fill="url(#shoe)"/>
+  <ellipse cx="230" cy="548" rx="30" ry="18" fill="url(#shoe)"/>
+  <ellipse cx="162" cy="540" rx="10" ry="5" fill="#FFFFFF" opacity="0.4"/>
+  <ellipse cx="222" cy="540" rx="10" ry="5" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- ===== 동글동글 몸통 (크림 재킷 + 보라 상의) ===== -->
+  <path d="M150 314 C116 322 108 372 110 418 C112 466 144 486 200 486 C256 486 288 466 290 418 C292 372 284 322 250 314 Q200 302 150 314 Z" fill="url(#jacket)" stroke="#D6C4A8" stroke-width="2"/>
+  <path d="M172 312 Q200 320 228 312 Q222 368 200 392 Q178 368 172 312 Z" fill="url(#purple)"/>
+  <path d="M168 310 Q174 362 200 394 Q176 384 160 360 Q150 340 152 318 Z" fill="#F5ECDD" stroke="#D6C4A8" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M232 310 Q226 362 200 394 Q224 384 240 360 Q250 340 248 318 Z" fill="#EDE2CF" stroke="#D6C4A8" stroke-width="2" stroke-linejoin="round"/>
+  <circle cx="200" cy="420" r="6" fill="#EADBC2" stroke="#C9B596" stroke-width="1.5"/>
+  <circle cx="200" cy="448" r="6" fill="#EADBC2" stroke="#C9B596" stroke-width="1.5"/>
+
+  <!-- 내려간 팔 + 동그란 손 -->
+  <path d="M266 336 C282 362 288 392 288 418" fill="none" stroke="#D6C4A8" stroke-width="44" stroke-linecap="round"/>
+  <path d="M266 336 C282 362 288 392 288 418" fill="none" stroke="url(#sleeve)" stroke-width="40" stroke-linecap="round"/>
+  <circle cx="290" cy="444" r="19" fill="url(#skinHand)"/>
+
+  <!-- 머리 아래 그림자 -->
+  <ellipse cx="200" cy="316" rx="60" ry="12" fill="#8C6A55" opacity="0.28" filter="url(#soft)"/>
+
+  <!-- ===== 머리 (동그란 버섯 단발) ===== -->
+  <path d="M200 52 C312 52 352 132 348 214 C346 262 334 300 306 314 C288 322 270 314 264 300 L136 300 C130 314 112 322 94 314 C66 300 54 262 52 214 C48 132 88 52 200 52 Z" fill="url(#hairBack)"/>
+
+  <!-- 동그란 얼굴 -->
+  <path d="M98 212 C98 150 144 120 200 120 C256 120 302 150 302 212 C302 274 258 316 200 316 C142 316 98 274 98 212 Z" fill="url(#skin)"/>
+
+  <!-- 앞머리 그림자 -->
+  <path d="M110 166 C140 178 172 182 202 176 C232 186 264 196 294 196 L294 212 C262 212 232 202 202 192 C170 198 138 194 108 182 Z" fill="#C98F72" opacity="0.32" filter="url(#soft)"/>
+
+  <!-- 옆머리 (동글게 안으로 말림) -->
+  <path d="M92 150 C76 214 82 278 106 312 C124 314 136 298 132 274 C126 236 126 192 134 158 Z" fill="url(#hair)"/>
+  <path d="M308 150 C324 214 318 278 294 312 C276 314 264 298 268 274 C274 236 274 192 266 158 Z" fill="url(#hair)"/>
+
+  <!-- 옆으로 넘긴 풍성한 앞머리 (동글동글 끝) -->
+  <path d="M86 188 C70 104 128 58 204 58 C280 58 334 104 318 198 C306 204 290 200 282 190 C272 198 252 196 242 184 C230 192 210 190 202 176 C190 184 168 180 160 166 C148 172 130 168 124 154 C114 164 98 178 86 188 Z" fill="url(#hair)"/>
+  <!-- 앞머리 결 -->
+  <g fill="none" stroke="#644B41" stroke-width="2.5" stroke-linecap="round" opacity="0.75">
+    <path d="M150 80 C182 102 198 140 202 172"/>
+    <path d="M176 70 C220 92 250 136 282 186"/>
+    <path d="M126 96 C146 116 158 140 160 162"/>
+    <path d="M240 72 C278 96 302 140 312 190"/>
+  </g>
+  <!-- 윤기 (엔젤링) -->
+  <path d="M112 112 C150 86 252 82 298 114" fill="none" stroke="url(#sheen)" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- 눈썹 -->
+  <path d="M136 196 Q153 187 170 194" fill="none" stroke="#3B2A24" stroke-width="4" stroke-linecap="round"/>
+  <path d="M230 194 Q247 187 264 196" fill="none" stroke="#3B2A24" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- 크고 동그란 눈 + 반짝임 -->
+  <g>
+    <ellipse cx="153" cy="236" rx="23" ry="25" fill="url(#iris)"/>
+    <ellipse cx="153" cy="238" rx="11" ry="12" fill="#120A07"/>
+    <circle cx="162" cy="225" r="8.5" fill="#FFFFFF"/>
+    <circle cx="144" cy="249" r="4" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="163" cy="249" r="2.2" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M129 228 C134 208 172 206 177 226" fill="none" stroke="#1E1410" stroke-width="5" stroke-linecap="round"/>
+    <path d="M131 222 L123 217" stroke="#1E1410" stroke-width="3.5" stroke-linecap="round"/>
+
+    <ellipse cx="247" cy="236" rx="23" ry="25" fill="url(#iris)"/>
+    <ellipse cx="247" cy="238" rx="11" ry="12" fill="#120A07"/>
+    <circle cx="256" cy="225" r="8.5" fill="#FFFFFF"/>
+    <circle cx="238" cy="249" r="4" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="257" cy="249" r="2.2" fill="#FFFFFF" opacity="0.75"/>
+    <path d="M223 226 C228 206 266 208 271 228" fill="none" stroke="#1E1410" stroke-width="5" stroke-linecap="round"/>
+    <path d="M269 222 L277 217" stroke="#1E1410" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 동그란 볼 생기 -->
+  <circle cx="124" cy="272" r="22" fill="url(#blush)"/>
+  <circle cx="276" cy="272" r="22" fill="url(#blush)"/>
+  <circle cx="118" cy="266" r="2.5" fill="#FFFFFF" opacity="0.75"/>
+  <circle cx="270" cy="266" r="2.5" fill="#FFFFFF" opacity="0.75"/>
+
+  <!-- 코 -->
+  <ellipse cx="200" cy="262" rx="3.5" ry="2.5" fill="#E6A88A"/>
+
+  <!-- 동그란 웃는 입 -->
+  <path d="M180 278 Q200 281 220 278 Q220 302 200 303 Q180 302 180 278 Z" fill="#9C3E44"/>
+  <path d="M183 280 Q200 283 217 280 Q216 288 200 289 Q184 288 183 280 Z" fill="#FFFFFF"/>
+  <ellipse cx="200" cy="297" rx="9" ry="4.5" fill="#F07C86"/>
+
+  <!-- 인사하는 팔 (들어 올림) -->
+  <path d="M144 334 C112 326 76 300 62 266" fill="none" stroke="#D6C4A8" stroke-width="44" stroke-linecap="round"/>
+  <path d="M144 334 C112 326 76 300 62 266" fill="none" stroke="url(#sleeve)" stroke-width="40" stroke-linecap="round"/>
+  <!-- 동그란 손 (손바닥 + 짧은 손가락) -->
+  <g transform="rotate(-14 50 226)">
+    <circle cx="36" cy="208" r="8" fill="url(#skinHand)"/>
+    <circle cx="50" cy="202" r="8.5" fill="url(#skinHand)"/>
+    <circle cx="64" cy="208" r="8" fill="url(#skinHand)"/>
+    <circle cx="50" cy="228" r="24" fill="url(#skinHand)"/>
+    <circle cx="76" cy="230" r="8" fill="url(#skinHand)"/>
+  </g>
+  <!-- 손 흔드는 표시 -->
+  <g fill="none" stroke="#E8A06A" stroke-width="4" stroke-linecap="round">
+    <path d="M6 200 q-8 14 0 28"/>
+    <path d="M-6 190 q-12 22 0 46"/>
+  </g>
+
+  <!-- 반짝이 장식 -->
+  <g fill="#F6C35B">
+    <path d="M346 92 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4 z"/>
+    <path d="M360 300 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" opacity="0.8"/>
+    <path d="M44 372 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" opacity="0.7"/>
+  </g>
+</svg>
