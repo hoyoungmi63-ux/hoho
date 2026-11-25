@@ -191,7 +191,7 @@ a:focus-visible, button:focus-visible {
 }
 /* 전신 아바타 */
 .profile-avatar {
-  width: 130px; flex-shrink: 0;
+  width: 160px; flex-shrink: 0;
   filter: drop-shadow(0 8px 12px rgba(59, 42, 30, 0.12));
 }
 .profile-head { display: flex; align-items: center; gap: 14px; }
@@ -404,7 +404,7 @@ a:focus-visible, button:focus-visible {
   .card, .about-card { padding: 24px 20px; }
 
   .profile-box { flex-direction: column; text-align: center; padding: 24px 20px; gap: 18px; }
-  .profile-avatar { width: 110px; }
+  .profile-avatar { width: 140px; }
   .profile-head { justify-content: center; }
   .profile-thumb { width: 52px; height: 52px; }
   .profile-list { text-align: left; display: inline-block; margin-top: 12px; }
